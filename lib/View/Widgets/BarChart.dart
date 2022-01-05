@@ -36,8 +36,29 @@ class BarChart extends StatelessWidget {
                 iconSize: 30.0,
                 onPressed: () {}),
           ],
+        ),
+        SizedBox(height: 30.0),
+        Row(
+          children: <Widget>[
+            Bar( "su", expenses[0], 200.0),
+          ],
         )
       ],
+    );
+  }
+}
+class Bar extends StatelessWidget {
+  @override
+
+  final String label;
+  final double mostExpensive;
+  final double amountSpent;
+
+  Bar(this.label,this.mostExpensive,this.amountSpent);
+
+  Widget build(BuildContext context) {
+    return Container(
+
     );
   }
 }
